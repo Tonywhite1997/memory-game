@@ -85,7 +85,7 @@ cards.forEach((card, cardIndex)=>{
         if(correctCardCount === 7){
             trackMoves(movesCounter)
             setTimeout(()=>{
-                alert(`Game completed with ${movesCounter} moves`)
+                alert(`Game completed with ${movesCounter + 1} moves`)
                 location.reload();
             }, 5000)
         }   
