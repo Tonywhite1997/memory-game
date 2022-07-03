@@ -42,10 +42,10 @@ body{
 
 .main__grid{
     height: 80%;
-    width: 90%;
+    width: 60%;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
     gap: 1em;
     place-content: center;
     border-radius: 10px;
@@ -53,8 +53,8 @@ body{
 }
 
 .card__container{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: relative;
     perspective: 1000px;
 }
@@ -115,6 +115,12 @@ body{
     font-size: 1.2rem;
 }
 
+@media screen and (max-width:900px){
+    .main__grid{
+        width: 80%;
+    }
+}
+
 
 @media screen and (max-width:700px){
     .main__grid{
@@ -131,8 +137,9 @@ body{
         font-size: 2rem;
     }
 }
-@media screen and (max-width:460px){
+@media screen and (max-width:550px){
     .main__grid{
+        width: 90%;
         grid-template-columns: repeat(4, 60px);
         grid-template-rows: repeat(4, 60px);
     }
@@ -144,5 +151,12 @@ body{
 
     .card__back i{
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .main__grid{
+        width: 100%;
+        border-radius: 0;
     }
 }
